@@ -462,6 +462,18 @@ body.menu-open {
   padding: 96px 0 56px;
 }
 
+/* ----------- Hero photo variant (DE homepage test only) ----------- */
+.hero--home-photo {
+  background-image: linear-gradient(rgba(18, 18, 18, 0.45), rgba(18, 18, 18, 0.62)), url('/homepage-foto.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: none;
+  align-items: center;
+}
+.hero--home-photo .hero__title { color: var(--pl-white); }
+.hero--home-photo .hero__sub { color: rgba(255, 255, 255, 0.92); }
+
 /* ----------- Automation Products ----------- */
 .auto-products {
   background: var(--pl-white);
