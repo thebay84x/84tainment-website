@@ -18,7 +18,7 @@
       'hero.eyebrow':    '84 Tainment GmbH',
       'hero.title1':     'Wir machen Marken zu',
       'hero.title2':     'Media Machines.',
-      'hero.sub':        'Deine Marke wird zur vollautomatisierten Media Machine — skaliert über YouTube, TikTok und Instagram in über 100 Länder.',
+      'hero.sub':        'Automatisiert. Globalisiert. Monetarisiert. Auf YouTube, TikTok und Instagram in über 100 Ländern.',
       'hero.cta':        'Jetzt automatisieren',
       'hero.brandsCue':  'Unsere Marken',
 
@@ -184,7 +184,7 @@
       'hero.eyebrow':    '84 Tainment GmbH',
       'hero.title1':     'We Turn Brands Into',
       'hero.title2':     'Media Machines.',
-      'hero.sub':        'We turn your brand into a fully automated media machine — scaling your content across YouTube, TikTok and Instagram into 100+ countries.',
+      'hero.sub':        'Automated. Globalized. Monetized. On YouTube, TikTok and Instagram across 100+ countries.',
       'hero.cta':        'Start automation',
       'hero.brandsCue':  'Our Brands',
 
@@ -350,7 +350,7 @@
       'hero.eyebrow':    '84 Tainment GmbH',
       'hero.title1':     'Convertimos marcas en',
       'hero.title2':     'Media Machines.',
-      'hero.sub':        'Convertimos tu marca en una media machine totalmente automatizada — escalando tu contenido en YouTube, TikTok e Instagram a más de 100 países.',
+      'hero.sub':        'Automatizado. Globalizado. Monetizado. En YouTube, TikTok e Instagram en más de 100 países.',
       'hero.cta':        'Iniciar automatización',
       'hero.brandsCue':  'Nuestras Marcas',
 
@@ -516,7 +516,7 @@
       'hero.eyebrow':    '84 Tainment GmbH',
       'hero.title1':     'Wij maken van merken',
       'hero.title2':     'Media Machines.',
-      'hero.sub':        'Wij maken van jouw merk een volledig geautomatiseerde media machine — en schalen je content via YouTube, TikTok en Instagram naar 100+ landen.',
+      'hero.sub':        'Geautomatiseerd. Geglobaliseerd. Gemonetiseerd. Op YouTube, TikTok en Instagram in meer dan 100 landen.',
       'hero.cta':        'Start automatisering',
       'hero.brandsCue':  'Onze Merken',
 
