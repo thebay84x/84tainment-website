@@ -131,7 +131,7 @@
 
       'legal.title':               'Impressum',
       'legal.company.label':       '84 Tainment GmbH Headquarter',
-      'legal.company.role':        'Geschäftsführer: <a href="sebastian-voppmann/index.html">Sebastian Voppmann</a>',
+      'legal.company.role':        'Geschäftsführer: <a href="/sebastian-voppmann/">Sebastian Voppmann</a>',
       'legal.company.address':     'Viktualienmarkt 8<br />80331 München<br />Deutschland',
       'legal.contact.label':       'Kontakt',
       'legal.contact.email':       'E-Mail: <a href="mailto:info@84tainment.com">info@84tainment.com</a>',
@@ -297,7 +297,7 @@
 
       'legal.title':               'Legal Notice',
       'legal.company.label':       '84 Tainment GmbH Headquarter',
-      'legal.company.role':        'Managing Director: <a href="sebastian-voppmann/index.html">Sebastian Voppmann</a>',
+      'legal.company.role':        'Managing Director: <a href="/sebastian-voppmann/">Sebastian Voppmann</a>',
       'legal.company.address':     'Viktualienmarkt 8<br />80331 Munich<br />Germany',
       'legal.contact.label':       'Contact',
       'legal.contact.email':       'Email: <a href="mailto:info@84tainment.com">info@84tainment.com</a>',
@@ -463,7 +463,7 @@
 
       'legal.title':               'Aviso Legal',
       'legal.company.label':       '84 Tainment GmbH Headquarter',
-      'legal.company.role':        'Director General: <a href="sebastian-voppmann/index.html">Sebastian Voppmann</a>',
+      'legal.company.role':        'Director General: <a href="/sebastian-voppmann/">Sebastian Voppmann</a>',
       'legal.company.address':     'Viktualienmarkt 8<br />80331 Múnich<br />Alemania',
       'legal.contact.label':       'Contacto',
       'legal.contact.email':       'Correo: <a href="mailto:info@84tainment.com">info@84tainment.com</a>',
@@ -629,7 +629,7 @@
 
       'legal.title':               'Colofon',
       'legal.company.label':       '84 Tainment GmbH Headquarter',
-      'legal.company.role':        'Bedrijfsleider: <a href="sebastian-voppmann/index.html">Sebastian Voppmann</a>',
+      'legal.company.role':        'Bedrijfsleider: <a href="/sebastian-voppmann/">Sebastian Voppmann</a>',
       'legal.company.address':     'Viktualienmarkt 8<br />80331 München<br />Duitsland',
       'legal.contact.label':       'Contact',
       'legal.contact.email':       'E-mail: <a href="mailto:info@84tainment.com">info@84tainment.com</a>',
@@ -698,8 +698,8 @@
   function showPage(name) {
     const page = document.getElementById('page-' + name);
     if (!page) {
-      // Page lives on a different document — navigate to home with hash
-      window.location.href = '/index.html#' + name;
+      // Page lives on a different document — navigate there directly
+      window.location.href = (name === 'impressum') ? '/impressum/' : '/#' + name;
       return;
     }
     document.querySelectorAll('.page').forEach((p) => p.classList.remove('is-active'));
@@ -876,9 +876,11 @@
   } catch (e) {}
   setLang(initialLang);
 
-  // Hash routing — open impressum/login directly when arriving with #hash
+  // Hash routing — redirect legacy #impressum to its own page; open others by hash
   const initialHash = (window.location.hash || '').replace('#', '');
-  if (initialHash && document.getElementById('page-' + initialHash)) {
+  if (initialHash === 'impressum') {
+    window.location.replace('/impressum/');
+  } else if (initialHash && document.getElementById('page-' + initialHash)) {
     showPage(initialHash);
   }
 
