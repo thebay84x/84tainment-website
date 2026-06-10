@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.84tainment.com/sitemap.xml
+Sitemap: https://84tainment.com/sitemap.xml
