@@ -509,23 +509,23 @@ body.menu-open {
   font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
   font-size: clamp(34px, 5.2vw, 56px);
   font-weight: 700;
-  color: var(--pl-dark);
-  line-height: 1.1;
+  color: var(--pl-orange);
+  line-height: 1.12;
   letter-spacing: -0.01em;
-  margin: 0 0 16px;
+  margin: 0 0 14px;
 }
 .article .article__meta {
   font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--pl-ink-light);
-  margin: 0 0 38px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--pl-ink-mid);
+  margin: 0 0 36px;
 }
 .article .article__meta strong {
-  color: var(--pl-orange);
-  font-weight: 600;
+  color: var(--pl-dark);
+  font-weight: 700;
 }
 .article h2 {
   font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
