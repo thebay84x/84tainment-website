@@ -25,10 +25,14 @@
 
   document.addEventListener('click', (e) => {
     const target = e.target.closest('[data-action]');
-    if (!target) return;
-    const action = target.getAttribute('data-action');
-    if (action === 'menu-open') { e.preventDefault(); openMenu(); }
-    else if (action === 'menu-close') { e.preventDefault(); closeMenu(); }
+    if (target) {
+      const action = target.getAttribute('data-action');
+      if (action === 'menu-open') { e.preventDefault(); openMenu(); return; }
+      if (action === 'menu-close') { e.preventDefault(); closeMenu(); return; }
+    }
+    // Close the menu when a navigation link inside it is clicked —
+    // no preventDefault, so the link still scrolls/navigates to its target.
+    if (e.target.closest('.site-menu__link')) { closeMenu(); }
   });
 
   document.addEventListener('keydown', (e) => {
