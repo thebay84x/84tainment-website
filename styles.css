@@ -1165,16 +1165,23 @@ body.menu-open {
 
 .step {
   display: grid;
-  grid-template-columns: 64px 1fr;
-  gap: 12px;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
   align-items: start;
 }
 
 .step__num {
-  font-family: var(--font-display);
-  font-size: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--pl-orange);
+  color: var(--pl-white);
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 14px;
   font-weight: 700;
-  color: var(--pl-orange);
   line-height: 1;
 }
 
@@ -1874,8 +1881,8 @@ body.menu-open {
   letter-spacing: 2px; color: var(--pl-orange); margin-bottom: 16px;
 }
 .mag-card__title {
-  font-family: var(--font-display); font-weight: 600; font-size: 23px;
-  line-height: 1.2; color: var(--pl-dark); margin: 0 0 12px;
+  font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 22px;
+  letter-spacing: -0.01em; line-height: 1.25; color: var(--pl-dark); margin: 0 0 12px;
 }
 .mag-card__excerpt { font-size: 14px; line-height: 1.65; color: var(--pl-ink-mid); margin: 0 0 22px; flex: 1; }
 .mag-card__more { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--pl-orange); }
