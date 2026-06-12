@@ -1931,8 +1931,8 @@ body.menu-open {
   .mag__grid { grid-template-columns: 1fr; }
 }
 
-/* Homepage-Überschriften: serifenlos & fett (CD-konform: Montserrat 700, kein Kursiv) */
-.hero__title,
+/* Homepage-Überschriften: serifenlos & fett (CD-konform: Montserrat 700, kein Kursiv).
+   Hero-Titel bewusst ausgenommen — bleibt auf dem schlichten Cormorant-Original. */
 .home-intro__title,
 .model__title,
 .mag__title,
@@ -1942,7 +1942,6 @@ body.menu-open {
   font-weight: 700;
   letter-spacing: -0.015em;
 }
-.hero__title em,
 .home-intro__title em,
 .model__title em,
 .mag__title em,
